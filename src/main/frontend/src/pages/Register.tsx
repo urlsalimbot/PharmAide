@@ -68,7 +68,9 @@ export default function Register() {
           <input
             type="number"
             placeholder="Age"
-            {...register("age")}
+            {...register("age", {
+              setValueAs: (v) => (v === "" ? undefined : parseInt(v, 10)),
+            })}
             className="rounded-md pl-2"
           />
           {errors.age && (
