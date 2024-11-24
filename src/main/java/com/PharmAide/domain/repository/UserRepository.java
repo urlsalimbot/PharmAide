@@ -4,7 +4,6 @@ package com.PharmAide.domain.repository;
 import com.PharmAide.Infrastructure.AppHibernate;
 import com.PharmAide.domain.dao.User;
 import com.PharmAide.domain.dao.User_;
-import com.PharmAide.domain.dao.UserAuth_;
 import com.PharmAide.domain.repository.interfaces.IUserRepository;
 import jakarta.inject.Inject;
 import org.hibernate.SessionFactory;

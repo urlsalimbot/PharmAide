@@ -10,15 +10,13 @@ type Profile = {
   phone: string;
   email: string;
   password: string;
+  confirmPassword: string;
 };
 
 const UserSchema: ZodType<Profile> = z
   .object({
     username: z.string(),
-    age: z.preprocess(
-      (a) => parseInt(z.string().parse(a), 10),
-      z.number().gte(18, "Must be 18 and above")
-    ),
+    age: z.number().gte(18, "Must be 18 and above"),
     email: z.string().email(),
     phone: z.string(),
     password: z

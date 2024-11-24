@@ -57,10 +57,6 @@ public class TransactionRepository implements ITransactionRepository {
         return Optional.of(res);
     }
 
-    /**
-     * @param id
-     * @return
-     */
     @Override
     public List<Transaction> findUnfulfilled() {
         var res = sessionFactory.fromTransaction(session -> {
