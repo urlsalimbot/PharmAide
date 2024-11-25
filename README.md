@@ -5,11 +5,18 @@
 - [x] **Java** as programming language
 - [x] **Javalin** as webserver framework
 - [x] **Jackson** as data bind serialization/deserialization
-- [x] **Java-JWT** as JWT spec implementation
+- [x] **Javalin-JWT** as JWT implementation
 - [x] **HikariCP** as datasource to abstract driver implementation
 - [x] **PostgreSQL** as database
 - [x] **Hibernate** as SQL framework to persistence layer
-- [ ] **Slugify** as string-processing utility
+
+### Front-End
+- [x] **Vite** as a project builder
+- [x] **React TypeScript** as front-end framework
+- [x] **Zod** for forms validation
+- [x] **Axios** for HttpXML operations
+- [x] **Redux** as global state manager
+- [x] **Tailwind** as CSS framework
 
 
 ## Tests:
